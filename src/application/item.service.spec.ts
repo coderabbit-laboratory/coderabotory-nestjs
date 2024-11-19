@@ -12,7 +12,7 @@ describe('ItemService', () => {
         {
           provide: ItemRepository,
           useValue: {
-            find: jest.fn().mockResolvedValue([]), // find 메서드 모킹
+            find: jest.fn().mockResolvedValue([]),
           },
         },
       ],

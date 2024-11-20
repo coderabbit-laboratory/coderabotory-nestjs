@@ -13,4 +13,8 @@ export class ItemRepository {
   async find(): Promise<Item[]> {
     return this.repository.find();
   }
+
+  async findOne(id: string): Promise<Item | null> {
+    return this.repository.findOne({ where: { id } });
+  }
 }
